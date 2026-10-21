@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp - Son Dad Barbershop</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:300,400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      /* General Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Oswald", sans-serif;
+      }
+
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        /* Your original background logic */
+        background: #d1d7db;
+        background-size: cover;
+      }
+
+      /* Navbar: Semi-transparent white */
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 40px;
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .logo {
+        height: 25px;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-size: 14px;
+        margin: 0 12px;
+        font-weight: 400;
+      }
+
+      .download-btn {
+        background-color: #25d366;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 12px;
+      }
+
+      /* Centering the Profile Card */
+      .hero-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .profile-card {
+        background: white;
+        width: 100%;
+        max-width: 400px;
+        padding: 40px 30px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+      }
+
+      .avatar {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+      }
+
+      h1 {
+        font-size: 26px;
+        color: #111b21;
+        margin-bottom: 35px;
+      }
+
+      /* Button Styling */
+      .actions {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .btn-green {
+        background-color: #25d366;
+        color: white;
+        text-decoration: none;
+        padding: 14px;
+        border-radius: 30px;
+        font-weight: 600;
+        transition: 0.2s ease;
+      }
+
+      .btn-green:hover {
+        background-color: #1ea952;
+      }
+
+      .btn-outline {
+        background-color: white;
+        color: #111b21;
+        text-decoration: none;
+        padding: 14px;
+        border: 1px solid #d1d7db;
+        border-radius: 30px;
+        transition: 0.2s ease;
+      }
+
+      .btn-outline:hover {
+        background-color: #f0f2f5;
+      }
+
+      .footer-note {
+        margin-top: 25px;
+        font-size: 14px;
+        color: #667781;
+      }
+
+      .footer-note a {
+        color: #00a884;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="welcomeBarber.html" class="back-btn">
+        <i class="fa fa-arrow-left"></i> Back
+      </a>
+      <div class="nav-left">
+        <img src="whatsapp-logo.png" alt="WhatsApp" class="logo" />
+      </div>
+      <div class="nav-links">
+        <a href="#">Features</a>
+        <a href="#">Privacy</a>
+        <a href="#">Help Center</a>
+        <a href="#">Blog</a>
+        <a href="#">For Business</a>
+        <a href="#">Apps</a>
+      </div>
+      <div class="nav-right">
+        <button class="download-btn">
+          Download <i class="icon-arrow"></i>
+        </button>
+      </div>
+    </nav>
+
+    <main class="hero-container">
+      <div class="profile-card">
+        <div class="avatar-container">
+          <img src="n1.jpg" alt="Son Dad Barbershop" class="avatar" />
+        </div>
+        <h1>Son Dad Barbershop</h1>
+
+        <div class="actions">
+          <a href="#" class="btn-green">Open app</a>
+          <a href="#" class="btn-outline">Continue to WhatsApp Web</a>
+        </div>
+
+        <p class="footer-note">
+          Don't have the app? <a href="#">Download it now</a>
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
